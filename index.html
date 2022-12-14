@@ -8,135 +8,146 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title" class="header">Survey Form</h1>
-    <p id="description" class="header">
-      Thank you for taking the time to fill this Feedback Form
-    </p>
-    <form id="survey-form">
-      <fieldset>
-        <label for="name" id="name-label"
-          >Name:
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Enter your name"
-            required
-            class="inline"
-          />
-        </label>
-        <label for="email" id="email-label"
-          >Email:
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-            required
-            class="inline"
-          />
-        </label>
-        <label for="age" id="number-label">
-          Age:
-          <input
-            id="age"
-            name="age"
-            type="number"
-            placeholder="Enter your
-          Age"
-            min="16"
-            max="120"
-            class="inline"
-          />
-        </label>
-      </fieldset>
-      <fieldset>
-        <label for="favorite"
-          >What's your favorite part of the Conference?
-          <select id="favorite" name="favorite">
-            <option value="">(select one)</option>
-            <option value="1">Conference</option>
-            <option value="2">Workshop</option>
-            <option value="3">Panel Discussions</option>
-            <option value="4">Award Paper/ Free Paper Sessions</option>
-          </select>
-        </label>
-      </fieldset>
+    <div class="container">
+      <h1 id="title" class="header">Survey Form</h1>
+      <p id="description" class="header">
+        Thank you for taking the time to fill this Feedback Form
+      </p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+              class="inline"
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+              class="inline"
+            />
+          </label>
+          <label for="age" id="number-label">
+            Age:
+            <input
+              id="age"
+              name="age"
+              type="number"
+              placeholder="Age"
+              min="16"
+              max="120"
+              class="inline"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="favorite"
+            >What's your favorite part of the Conference?
+            <select id="favorite" name="favorite">
+              <option value="">(select one)</option>
+              <option value="1">Conference</option>
+              <option value="2">Workshop</option>
+              <option value="3">Panel Discussions</option>
+              <option value="4">Award Paper/ Free Paper Sessions</option>
+            </select>
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <p>What would you like to see improved?</p>
-        <label
-          ><input name="improve" value="venue" type="checkbox" class="inline" />
-          Venue</label
-        >
-        <label
-          ><input
-            name="improve"
-            value="topics"
-            type="checkbox"
-            class="inline"
-          />
-          Topics</label
-        >
-        <label
-          ><input
-            name="improve"
-            value="technical"
-            type="checkbox"
-            class="inline"
-          />
-          Techinal aspects</label
-        >
-        <label
-          ><input name="improve" value="food" type="checkbox" class="inline" />
-          Food</label
-        >
-        <label
-          ><input
-            name="improve"
-            value="schedule"
-            type="checkbox"
-            class="inline"
-          />
-          Schedule</label
-        >
-        <label
-          ><input
-            name="improve"
-            value="workshops"
-            type="checkbox"
-            class="inline"
-          />
-          Workshops</label
-        >
-      </fieldset>
-      <fieldset>
-        <label for="comments">
-          Any additional Feedback/ Comments?
-          <textarea
-            id="comments"
-            name="comments"
-            rows="5"
-            cols="30"
-            placeholder="Write your feedback or comments"
-          ></textarea>
-        </label>
-      </fieldset>
-      <fieldset>
-        <p name="mailing">
-          Would you like to recieve mails and updates about current and upcoming
-          Conferences?
-        </p>
-        <label for="yes"
-          ><input id="yes" name="mailing" type="radio" class="inline" />
-          Yes</label
-        >
-        <label for="no"
-          ><input id="no" name="mailing" type="radio" class="inline" />
-          No</label
-        >
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
+        <fieldset>
+          <p>What would you like to see improved?</p>
+          <label
+            ><input
+              name="improve"
+              value="venue"
+              type="checkbox"
+              class="inline"
+            />
+            Venue</label
+          >
+          <label
+            ><input
+              name="improve"
+              value="topics"
+              type="checkbox"
+              class="inline"
+            />
+            Topics</label
+          >
+          <label
+            ><input
+              name="improve"
+              value="technical"
+              type="checkbox"
+              class="inline"
+            />
+            Techinal aspects</label
+          >
+          <label
+            ><input
+              name="improve"
+              value="food"
+              type="checkbox"
+              class="inline"
+            />
+            Food</label
+          >
+          <label
+            ><input
+              name="improve"
+              value="schedule"
+              type="checkbox"
+              class="inline"
+            />
+            Schedule</label
+          >
+          <label
+            ><input
+              name="improve"
+              value="workshops"
+              type="checkbox"
+              class="inline"
+            />
+            Workshops</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="comments">
+            Any additional Feedback/ Comments?
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="30"
+              placeholder="Write your feedback or comments"
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <p name="mailing">
+            Would you like to recieve mails and updates about current and
+            upcoming Conferences?
+          </p>
+          <label for="yes"
+            ><input id="yes" name="mailing" type="radio" class="inline" />
+            Yes</label
+          >
+          <label for="no"
+            ><input id="no" name="mailing" type="radio" class="inline" />
+            No</label
+          >
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
 </html>
