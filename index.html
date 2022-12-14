@@ -40,7 +40,7 @@
           <label for="age" id="number-label">
             Age:
             <input
-              id="age"
+              id="number"
               name="age"
               type="number"
               placeholder="Age"
@@ -53,7 +53,7 @@
         <fieldset>
           <label for="favorite"
             >What's your favorite part of the Conference?
-            <select id="favorite" name="favorite">
+            <select id="dropdown" name="favorite">
               <option value="">(select one)</option>
               <option value="1">Conference</option>
               <option value="2">Workshop</option>
@@ -138,15 +138,15 @@
             upcoming Conferences?
           </p>
           <label for="yes"
-            ><input id="yes" name="mailing" type="radio" class="inline" />
+            ><input id="yes" name="mailing" type="radio" class="inline" value="yes" />
             Yes</label
           >
           <label for="no"
-            ><input id="no" name="mailing" type="radio" class="inline" />
+            ><input id="no" name="mailing" type="radio" class="inline" value="no" />
             No</label
           >
         </fieldset>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </div>
   </body>
